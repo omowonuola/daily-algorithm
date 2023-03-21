@@ -32,28 +32,61 @@
 // maxChar('abbottiffeeee')
 
 // Example 2
-('geeksforgeeks')
+// ('geeksforgeeks')
 // create an object
 // loop through the object to get the total number of times each char appears
 // set the highest char and the num of times it appeared 
 
-const maxChar = (str) => {
+// const maxCharacter = (str) => {
+//     let obj = {}
+//     for (let char of str) {
+//         (!obj[char]) ? obj[char]=1 : obj[char]++
+//         // console.log(obj)
+//     }
+
+//     let maxNum = 0;
+//     let maxChar = '';
+
+//     for (let char in obj) {
+//         if (obj[char] >= maxNum) {
+//             maxNum = obj[char];
+//             maxChar = char;
+//         }
+//         console.log(`${maxChar} appears ${maxNum} times`)
+//     }
+// }
+
+// maxCharacter('geeksforgeeks')
+
+
+
+
+
+// maxCharacters('geeksforgeeks')
+// we want to know the char with highest number 
+
+// create an object
+// loop through the object for the number of times each of them appear
+// check if the char is in object, if not set value to 1
+
+const characterAppear = (str) => {
     let obj = {}
-    for (let char of str) {
-        (!obj[char]) ? obj[char]=1 : obj[char]++
+
+    for(let char of str) {
+        (!obj[char])?obj[char]=1 : obj[char]++
         // console.log(obj)
     }
 
-    let maxNum = 0;
-    let maxChar = '';
+    let maxNum = 0
+    let maxChar = ''
 
-    for (let char in obj) {
-        if (obj[char] >= maxNum) {
-            maxNum = obj[char];
-            maxChar = char;
+    for(let char in obj)
+        if(obj[char] >= maxNum) {
+            maxNum = obj[char]
+            maxChar = char
         }
+
         console.log(`${maxChar} appears ${maxNum} times`)
-    }
 }
 
-maxChar('geeksforgeeks')
+characterAppear('ch ar acter Ap pe ar')
