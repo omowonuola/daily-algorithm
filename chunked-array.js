@@ -17,3 +17,6 @@ const chunked = (arr, n) => {
 }
 
 chunked([1,2,4,5,6,3,4,5,4], 3)
+
+
+

@@ -24,3 +24,4 @@ const fizzBuzz = (num) => {
 }
 
 fizzBuzz(45)
+
