@@ -18,3 +18,8 @@ console.log({
     removed: space("Mr John Smith", 13)
 })
 
+
+// create an empty str
+// loop through the str using for loop
+// check if the index of each string has space and replace it with %20
+
